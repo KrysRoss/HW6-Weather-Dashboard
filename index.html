@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <script async src="./script.js"></script>
+  <link href="./style.css" rel="stylesheet" />
+</head>
+<body class="flex justify-start align-center column">
+  <div class="header flex-center">
+    <h1>Weather Dashboard</h1>
+  </div>
+  <div class="flex">
+    <div class="search-container flex column">
+      <h1>Search for a city</h1>
+      <input id="searchInput" type="text" placeholder="Ex: San Diego" />
+      <button id="searchBtn" class="search-btn">Search</button>
+      <span class="divider"></span>
+      <button class="quick-search-btn">Austin</button>
+      <button class="quick-search-btn">Chicago</button>
+      <button class="quick-search-btn">New York</button>
+      <button class="quick-search-btn">Orlando</button>
+      <button class="quick-search-btn">San Francisco</button>
+      <button class="quick-search-btn">Seattle</button>
+      <button class="quick-search-btn">Denver</button>
+      <button class="quick-search-btn">Atlanta</button>
+    </div>
+    <div class="results-container flex column">
+      <div class="city-detail flex column">
+        <h1 id="cityDate">--</h1>
+        <p id="currentDescription">--</p>
+        <span class="divider"></span>
+        <p id="currentTemp">Temp: --</p>
+        <p id="currentWind">Wind: --</p>
+        <p id="currentHumidity">Humidity: --</p>
+        <p>UV Index: <span id="currentUvIndex">--</span></p>
+      </div>
+      <div class="flex column">
+        <h2>5-day Forecast</h2>
+        <div class="flex justify-start align-start">
+          <div class="five-day flex align-start justify-start column">
+            <h2 id="date">--</h2>
+            <p>ICON HERE</p>
+            <p id="temp">--</p>
+            <p id="wind">--</p>
+            <p id="humidity">--</p>
+          </div>
+          <div class="five-day flex align-start justify-start column">
+            <h2 id="date">--</h2>
+            <p>ICON HERE</p>
+            <p id="temp">--</p>
+            <p id="wind">--</p>
+            <p id="humidity">--</p>
+          </div>
+          <div class="five-day flex align-start justify-start column">
+            <h2 id="date">--</h2>
+            <p>ICON HERE</p>
+            <p id="temp">--</p>
+            <p id="wind">--</p>
+            <p id="humidity">--</p>
+          </div>
+          <div class="five-day flex align-start justify-start column">
+            <h2 id="date">--</h2>
+            <p>ICON HERE</p>
+            <p id="temp">--</p>
+            <p id="wind">--</p>
+            <p id="humidity">--</p>
+          </div>
+          <div class="five-day flex align-start justify-start column">
+            <h2 id="date">--</h2>
+            <p>ICON HERE</p>
+            <p id="temp">--</p>
+            <p id="wind">--</p>
+            <p id="humidity">--</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
